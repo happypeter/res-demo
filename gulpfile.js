@@ -2,6 +2,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
+var browserSync = require('browser-sync').create();
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./_site"
+        }
+    });
+});
+
 
 gulp.task('jekyll-build', function (done) {
   return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
