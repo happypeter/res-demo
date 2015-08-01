@@ -18,16 +18,22 @@ gulp.task('jekyll-build', function (done) {
             .on('close', done);
 });
 
+gulp.task('jekyll-rebuild', ['jekyll-build'], function(){
+  browserSync.reload();
+});
+
 gulp.task('sass', function () {
   return gulp.src('_scss/main.scss')
          .pipe(sass())
          .pipe(prefix())
          .pipe(gulp.dest('./_site/css'))
-         .pipe(browserSync.stream());
+         .pipe(browserSync.stream())
+         .pipe(gulp.dest('./css'));
 });
 
 gulp.task('watch', function () {
   gulp.watch('_scss/*.scss', ['sass']);
+  gulp.watch(['index.html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
