@@ -4,6 +4,9 @@ var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
 var browserSync = require('browser-sync').create();
 
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -14,6 +17,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('jekyll-build', function (done) {
+  browserSync.notify(messages.jekyllBuild);
   return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
             .on('close', done);
 });
