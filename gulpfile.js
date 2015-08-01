@@ -22,9 +22,12 @@ gulp.task('sass', function () {
   return gulp.src('_scss/main.scss')
          .pipe(sass())
          .pipe(prefix())
-         .pipe(gulp.dest('./css'));
+         .pipe(gulp.dest('./_site/css'))
+         .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function () {
   gulp.watch('_scss/*.scss', ['sass']);
 });
+
+gulp.task('default', ['browser-sync', 'watch']);
