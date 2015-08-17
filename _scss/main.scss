@@ -1,8 +1,10 @@
-.peter {
-  background: teal;
-  color: white;
-  padding: 30px;
-  width: 100px;
-  text-align: center;
-  font-family: sans-serif;
+@import "common";
+
+header {
+  height: 80px;
+  background-color: #bada55;
+}
+.course-intro {
+  height: 200px;
+  background-color: teal;
 }
