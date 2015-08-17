@@ -7,6 +7,12 @@ header {
 .course-intro {
   height: 200px;
 }
+.action {
+  .action-button {
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+}
 .author {
   height: 200px;
   background-color: $primary-color;
