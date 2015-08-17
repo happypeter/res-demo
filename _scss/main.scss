@@ -2,9 +2,20 @@
 
 header {
   height: 80px;
-  background-color: #bada55;
+  background-color: $primary-color;
 }
 .course-intro {
   height: 200px;
-  background-color: teal;
+}
+.author {
+  height: 200px;
+  background-color: $primary-color;
+}
+.warning {
+  height: 200px;
+}
+
+footer {
+  background-color: #212121;
+  height: 100px;
 }
