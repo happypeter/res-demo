@@ -1,0 +1,28 @@
+.stat-item {
+  text-align: center;
+  margin-bottom: 2em;
+  .icon {
+    background-color: $primary-color;
+    width: 5.2em;
+    height: 5.2em;
+    border-radius: 50%;
+    padding: 1.1em;
+    margin: 1em auto;
+    svg {
+      display: block;
+      width: 3em;
+      height: 3em;
+      fill: $primary-color-text;
+    }
+  }
+  .title {
+    color: $primary-text-color;
+    margin-bottom: .3em;
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+  .info {
+    color: $secondary-text-color;
+    margin-top: 0;
+  }
+}
