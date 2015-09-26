@@ -2,17 +2,12 @@
   text-align: center;
   margin-bottom: 2em;
   .icon {
-    background-color: $primary-color;
-    width: 5.2em;
-    height: 5.2em;
-    border-radius: 50%;
-    padding: 1.1em;
-    margin: 1em auto;
     svg {
+      margin: .5em auto;
       display: block;
-      width: 3em;
-      height: 3em;
-      fill: $primary-color-text;
+      width: 10em;
+      height: 10em;
+      fill: $primary-color;
     }
   }
   .title {

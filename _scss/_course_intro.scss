@@ -1,0 +1,14 @@
+.course-intro {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  h1 {
+    text-align: center;
+    line-height: 1.2;
+    color: $primary-text-color;
+  }
+  p {
+    text-align: center;
+    margin-top: .5em;
+    color: $secondary-text-color;
+  }
+}

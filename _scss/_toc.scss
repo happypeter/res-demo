@@ -1,0 +1,46 @@
+.toc {
+  h2 {
+    text-align: center;
+  }
+  background-color: #EDEFF0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  .list {
+    width: 90%;
+    margin: 16px auto;
+    background-color: #F9FAFA;
+    margin: 1em auto;
+    .entry {
+      transition: all .5s ease;
+      line-height: 1.9rem;
+      padding: 1em 1.3em;
+      font-size: 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid #edeff0;
+      &:hover {
+        background-color: #FFF;
+        .no {
+          background-color: #5FCF80;
+        }
+      }
+      .no {
+        background-color: lightseagreen;
+        color: white;
+        width: .5em;
+        height: .5em;
+        margin-top: .7em;
+        border-radius: 50%;
+        float: left;
+        margin-right: .5em;
+      }
+      .text {
+
+      }
+      .duration {
+        float: right;
+        font-size: .8em;
+        color: $secondary-text-color;
+      }
+    }
+  }
+}

@@ -1,46 +1,11 @@
 @import "common";
+
+@import "header";
+@import "course_intro";
+@import "action";
 @import "stat";
+@import "toc";
+@import "author";
+@import "warning";
+@import "footer";
 
-header {
-  height: 80px;
-  background-color: $primary-color;
-}
-.course-intro {
-  height: 200px;
-}
-.action {
-  .action-button {
-    margin: 0 auto;
-    margin-bottom: 2em;
-  }
-}
-.author {
-  text-align: center;
-  background-color: $primary-color;
-  .name {
-    margin-top: 1em;
-    color: $primary-color-text;
-  }
-  .intro {
-    color: $primary-color-text;
-    opacity: .8;
-    font-size: .9em;
-  }
-  .follow-author {
-    display: block;
-    width: 7em;
-    padding: .7em;
-    background-color: $primary-color-dark;
-    border-radius: .8em;
-    color: $primary-color-text;
-    margin: 1.5em auto;
-  }
-}
-.warning {
-  height: 200px;
-}
-
-footer {
-  background-color: #212121;
-  height: 100px;
-}

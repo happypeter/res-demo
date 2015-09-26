@@ -14,6 +14,13 @@ $divider-color:        #B6B6B6;
 * {
   box-sizing: border-box;
 }
+
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
 body {
   margin: 0;
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
