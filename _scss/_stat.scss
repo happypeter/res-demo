@@ -1,20 +1,26 @@
+.stat {
+  max-width: 960px;
+  margin: 0 auto;
+}
 .stat-item {
   text-align: center;
   margin-bottom: 2em;
+  @media (min-width: 600px) {
+    width: 33.3333%;
+    float: left;
+  }
   .icon {
     svg {
       margin: .5em auto;
       display: block;
       width: 10em;
       height: 10em;
+      @media (min-width: 600px) and (max-width: 850px) {
+        width: 5em;
+        height: 5em;
+      }
       fill: $primary-color;
     }
-  }
-  .title {
-    color: $primary-text-color;
-    margin-bottom: .3em;
-    font-size: 1.3em;
-    margin-top: 0;
   }
   .info {
     color: $secondary-text-color;

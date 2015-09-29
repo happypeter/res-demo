@@ -37,3 +37,9 @@ a {
 .clearfix:after {
     clear: both;
 }
+
+.common-title {
+  text-align: center;
+  color: $primary-text-color;
+  line-height: 1.2;
+}
